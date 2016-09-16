@@ -1,0 +1,7 @@
+Project 0
+Software Engineering
+Ethan McQueen and Kei Ng
+09/16/2016
+The biggest improvement we made to the program was a feature that made our main menu GUI functional: implementing the runnable interface
+into PlayToadsAndFrogs and our PlayChomp classes allows us to launch the graphical versions of these games from a graphical menu. 
+Without this, the swing painting thread gets hung up, so it is important. 

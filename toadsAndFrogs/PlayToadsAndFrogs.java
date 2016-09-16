@@ -12,7 +12,7 @@ import java.util.*;
 import javax.swing.*;
 import java.awt.*;
 
-public class PlayToadsAndFrogs {
+public class PlayToadsAndFrogs implements Runnable{
 
 
     //instance variables
@@ -41,7 +41,13 @@ public class PlayToadsAndFrogs {
     private final int NUM_PLAYERS = 2;
     
     //public methods
-  
+    
+    /**
+     * Implement the runnable interface.
+     */
+    public void run() {
+    	main(null);
+    }
 
     /**
      * Class constructor.
@@ -215,7 +221,7 @@ class ToadsAndFrogsDisplay extends JPanel {
      * @return  A Dimension object representing the smallest size needed to nicely display this game.
      */
     public Dimension getPreferredSize() {
-        int width = 20 + 30*this.game.boxes.length;
+        int width = 20 + 31*this.game.boxes.length;
         int height = 80;
         return new Dimension(width, height);
     }
