@@ -50,6 +50,9 @@ public class Chomp {
         this.boxes = boxesInput;
     }  
     
+    /**
+     * Get the board position number of the poison cookie (the bottom-left corner). 
+     */
     public int getPoisonCookie() {
     	int width = this.boxes.size();
         int height = this.boxes.get(0).size();
