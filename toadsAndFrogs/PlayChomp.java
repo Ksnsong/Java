@@ -104,8 +104,8 @@ public class PlayChomp implements Runnable {
     	final int height = this.game.boxes.get(0).size();
     	//System.out.println(clickX+","+clickY);
     	int currentBox = 1;
-    	for (int j = 0; j < width; j++) {
-    		for (int i = 0; i < height; i++) {
+    	for (int j = 0; j < height; j++) {
+    		for (int i = 0; i < width; i++) {
     			if (clickX >= 20 + (30 * i) && clickX <= 50 + (30 * i) &&
     					clickY >= 30 + (30 * j) && clickY <= 60 + (30 * j)) {
     				return currentBox;
@@ -219,7 +219,7 @@ public class PlayChomp implements Runnable {
      * Main method for testing.
      */
     public static void main(String[] args) { 
-        Chomp game0 = new Chomp(6,6);
+        Chomp game0 = new Chomp(5,4);
         PlayChomp pC = new PlayChomp(game0);
         pC.playGame();
     }
