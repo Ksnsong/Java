@@ -18,7 +18,7 @@ public class ToadsAndFrogs {
     /**
      * The number of boxes in the game.
      */
-    public int size;
+    private int size;
     
     /**
      * Contents of the boxes.  0 is empty, 1 is a Toad, -1 is a Frog.
