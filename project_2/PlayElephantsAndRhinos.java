@@ -238,9 +238,9 @@ class ElephantsAndRhinosDisplay extends JPanel {
         this.game = game;
         try {                
         	// Elephant image found at: http://icons.iconarchive.com/icons/fasticon/animal-toys/256/Elephant-icon.png
-        	elephantImage = ImageIO.read(new File("./Project_2/Elephant.png"));
+        	elephantImage = ImageIO.read(new File("Elephant.png"));
         	// Rhino image found at: http://365psd.com/images/premium/thumbs/485/cartoon-head-of-a-rhinoceros-cute-animal-illustration-vector-207630.jpg
-        	rhinoImage = ImageIO.read(new File("./Project_2/Rhino.png"));
+        	rhinoImage = ImageIO.read(new File("Rhino.png"));
          } catch (IOException ex) {
         	 System.out.println("Image failed to load...");
          }
